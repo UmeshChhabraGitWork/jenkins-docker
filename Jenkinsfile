@@ -1,6 +1,6 @@
 pipeline {
  environment {
- imagename = "umeshhubdocker/jenkins-docker"
+ imagename = "umeshhubdocker/jenkins-docker" 
  registryCredential = 'umeshhubdocker'
  dockerImage = ''
  }
@@ -18,7 +18,7 @@ pipeline {
  }
  }
  }
- stage('Running image') {
+ stage('Running image) {
  steps{
  script {
  sh "docker run ${imagename}:latest"
