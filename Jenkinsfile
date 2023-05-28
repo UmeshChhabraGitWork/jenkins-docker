@@ -18,7 +18,7 @@ pipeline {
  }
  }
  }
- stage('Running image) {
+ stage('Running image') {
  steps{
  script {
  sh "docker run ${imagename}:latest"
