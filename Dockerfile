@@ -1,4 +1,3 @@
-FROM ubuntu:latest
-RUN apt update && apt upgrade -y
-RUN apt install nodejs -y
-RUN node -v
+sudo apt update && apt upgrade -y
+sudo apt install nodejs -y
+sudo docker RUN node -v
