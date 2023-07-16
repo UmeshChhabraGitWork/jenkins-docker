@@ -1,6 +1,6 @@
 pipeline {
  environment {
- imagename = "umeshhubdocker/DockerJenkinsPipeline" 
+ imagename = "umeshhubdocker/jenkins-docker" 
  registryCredential = 'umeshhubdocker-docckerhub'
  dockerImage = ''
  }
@@ -8,7 +8,7 @@ pipeline {
  stages {
  stage('Cloning Git') {
  steps {
- git([url: 'https://github.com/UmeshChhabraGitWork/DockerJenkinsPipeline.git', branch: 'main'])
+ git([url: 'https://github.com/UmeshChhabraGitWork/jenkins-docker.git', branch: 'main'])
  }
  }
  stage('Building image') {
@@ -34,6 +34,6 @@ pipeline {
  }
  }
  }
- }
+ }	
  }
 }
